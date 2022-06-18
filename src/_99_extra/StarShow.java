@@ -23,7 +23,7 @@ public class StarShow {
 		// Remove the drawStar(150) from the program before you proceed.
 		
 		// Set the robot speed to 100
-         batman.setSpeed(100);
+         batman.setSpeed(300);
 		// Make a variable to hold the X position of the Robot and set it to 10
            int x = 10;
 		// Make a variable to hold the Y position of the Robot and set it to 600
@@ -45,18 +45,18 @@ public class StarShow {
 			// Call the drawStar() method with your star size variable
               drawStar(starsize);
 			// Increase the value of the X position variable by star size. See Figure 2
-
+               x = x+starsize;
 			// decrease the value of the Y position variable by star size. See Figure 3
-
+               	y = y-starsize;
 			// Increase the star size by 20
-
+               	starsize = starsize+20;
 			// Turn the robot 12 degrees
 
 			// Change the pen color (random)
-
+                batman.setRandomPenColor();
 		
 			// Increase the number of stars that have been drawn by 1,
-		
+		       star = star+1;
 		
 		// End the while loop here
              }
@@ -65,21 +65,21 @@ public class StarShow {
 
 	private void drawStar(int starSize) {
 		// Put the robot's pen down
-
+		batman.penDown();
     	// COUNT. Create an int variable that will count how many lines of the star we have drawn.
     	//        The start value will be zero because no lines have yet been drawn. Use this code:
 		  /**     int lines = 0;    **/
-
+		int count = 0;
 		// LOOP: Start a while loop to repeat the following code until 5 lines have been drawn
-
+                   while(count<5) {
 				// MOVE the robot the distance of the starSize variable
-
+                   batman.move(starSize);
 				// TURN the robot 144 degrees
-
-				// COUNT. Add one to the number of lines the robot has drawn      lines+=1;
-
+                   batman.turn(144);
+                 //  COUNT. Add one to the number of lines the robot has drawn      lines+=1;
+                 count+=1;
     	// End the while loop here
-
+	}
 }
 	
 	public static void main(String[] args) {
