@@ -16,7 +16,7 @@ PImage unicorn;
 void setup() {
   // 2. The code below loads your rainbow picture into the program. 
 //     Make sure the file name is correct for the rainbow image you saved earlier
-rainbow = loadImage("e.g. rainbow.jpg");
+rainbow = loadImage("rainbow_.jpg");
   
 // 3. Set the size of the sketch. Make it big enough to show the rainbow you chose.
 size(900,900);
@@ -24,7 +24,7 @@ size(900,900);
   rainbow.resize(900,900);
 // 5. Drag and drop an image with a unicorn onto this sketch. 
 //    Try to find one with a transparent background. Use the same idea as in step 1.
-       
+      
 
 
 //Make sure the file name is correct for the unicorn image you saved.  
